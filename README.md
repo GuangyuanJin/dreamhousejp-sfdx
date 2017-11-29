@@ -1,5 +1,7 @@
 # DreamHouse Sample Application
 
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
+
 DreamHouse is a sample application that demonstrates the unique value proposition of the Salesforce App Cloud for building Employee Productivity and Customer Engagement apps.
 
 Check out the [DreamHouse microsite](http://www.dreamhouseapp.io/) for more information.
@@ -29,15 +31,13 @@ Check out the [DreamHouse microsite](http://www.dreamhouseapp.io/) for more info
     sfdx force:user:permset:assign -n dreamhouse
     ```
 
-1. Import sample data
-    ```
-    sfdx force:data:tree:import -u dh --plan ./data/Broker__c-Property__c-plan.json
-    ```    
-    By default the **Date Listed** value for all the properties is arbitrarily set to 10 days before the date of the import. You may want to change that value on a few properties to make the the charts more interesting.
-
 1. Open the scratch org:
     ```
     sfdx force:org:open
     ```
 
+1. In **Setup**, type **theme** in the quick find box. Click **Themes and Branding**, and flip the toggle to hide background images in Lightning Experience.
+
 1. Select **DreamHouse** in the App Launcher
+
+1. Click the **Data Import** tab and click **Initialize Sample Data**
