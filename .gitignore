@@ -5,7 +5,9 @@
 .salesforce
 node_modules
 .idea
+.vscode
 .tern-project
 .settings
 selenium-client-jars/
 test/artifacts
+.vscode
