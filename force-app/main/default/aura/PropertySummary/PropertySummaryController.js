@@ -3,10 +3,11 @@
     When a new Property is selected (in another component), load the corresponding
     property record.
     */
-    onPropertySelected: function (component, event) {
+    recordChangeHandler: function (component, event) {
+        console.log(component.get("v.property"));
         component.set("v.recordId", event.getParam("recordId"));
-        var propertyService = component.find("propertyService");
-        propertyService.reloadRecord();
+        var service = component.find("service");
+        service.reloadRecord();    
     },
 
     editRecord: function (component, event, helper) {
@@ -18,9 +19,9 @@
         editRecordEvent.fire();
     },
 
-    navigateToRecord : function(component, event) {
+    navigateToBrokerRecord : function(component, event) {
 	    var navigateEvent = $A.get("e.force:navigateToSObject");
-        navigateEvent.setParams({"recordId": component.get("v.brokerId"), slideDevName: "detail"});
+        navigateEvent.setParams({"recordId": component.get("v.property").Broker__r.Id, slideDevName: "detail"});
 	    navigateEvent.fire();
     }
 
