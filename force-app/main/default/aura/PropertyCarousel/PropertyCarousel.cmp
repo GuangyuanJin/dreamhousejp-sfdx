@@ -21,7 +21,7 @@
             <aura:set attribute="else">
                 <div class="card-content">
                     <lightning:icon iconName="utility:photo" size="medium" class="slds-align_absolute-center"/>
-                    <p class="slds-text-color--weak">There are currently no pictures for this property.</p>
+                    <p class="slds-text-color--weak">現在この物件には写真がありません。</p>
                 </div>
             </aura:set>
         </aura:if>

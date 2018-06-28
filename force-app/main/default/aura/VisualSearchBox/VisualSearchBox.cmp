@@ -10,16 +10,16 @@
 
     <div>
 
-        <p class="slds-form-element__label">Visual search</p>
+        <p class="slds-form-element__label">画像検索</p>
 
         <button class="slds-button slds-button_neutral upload-btn">
-            <lightning:icon iconName="utility:upload" size="xx-small" /> Upload Picture
+            <lightning:icon iconName="utility:upload" size="xx-small" /> 画像をアップロード
             <input aura:id="fileInput" type="file" accept="image/*" onchange="{!c.onFileChange}" />
         </button>
 
         <div class="frame" ondragover="{!c.onDragOver}" ondrop="{!c.onDrop}">
             <aura:if isTrue="{!!v.pictureSrc}">
-                <p class="drop-message slds-text-color--weak">or drop picure here</p>
+                <p class="drop-message slds-text-color--weak">もしくはここへ画像をドロップ</p>
             </aura:if>
             <img src="{!v.pictureSrc}" />
         </div>

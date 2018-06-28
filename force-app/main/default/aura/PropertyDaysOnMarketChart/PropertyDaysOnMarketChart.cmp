@@ -18,14 +18,14 @@
     <div class="slds-card">
         <lightning:layout >
         	<lightning:layoutitem class="{! 'days-block ' + v.status}">
-                <div class="days">{!v.property.Days_On_Market__c}</div>days on<br/>the market
+                <div class="days">{!v.property.Days_On_Market__c}</div>日経過<br/>売り出し開始から
             </lightning:layoutitem>
             <lightning:layoutitem flexibility="grow" class="chart">
                 <div class="{! 'bar ' + v.status }" style="{! 'width:' + v.property.Days_On_Market__c / 90 * 100 + '%' }"/>
                 <div class="axis">
                     <div><div class="legend">{!v.formattedDateListed}</div></div>
-                    <div><div class="legend">30 days</div></div>
-                    <div><div class="legend">60 days</div></div>
+                    <div><div class="legend">30 日</div></div>
+                    <div><div class="legend">60 日</div></div>
                 </div>
             </lightning:layoutitem>
         </lightning:layout>

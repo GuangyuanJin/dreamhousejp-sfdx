@@ -16,7 +16,7 @@
         event.dataTransfer.dropEffect = 'copy';
         var files = event.dataTransfer.files;
         if (files.length>1) {
-            return alert("You can only upload one profile picture");
+            return alert("アップロードできるファイルは一つだけです");
         }
         helper.readFile(component, helper, files[0]);
 	}

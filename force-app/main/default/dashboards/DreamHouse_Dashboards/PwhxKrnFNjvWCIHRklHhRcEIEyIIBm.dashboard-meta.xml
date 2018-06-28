@@ -14,13 +14,15 @@
                     <column>Property__c.Price__c</column>
                 </chartSummary>
                 <componentType>Metric</componentType>
-                <header>Total Portfolio</header>
+                <displayUnits>Auto</displayUnits>
+                <header>ポートフォリオ合計</header>
                 <indicatorBreakpoint1>5000000.0</indicatorBreakpoint1>
                 <indicatorBreakpoint2>1.0E7</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <report>DreamHouse_Reports/Properties_by_Broker</report>
+                <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>3</rowSpan>
@@ -36,12 +38,13 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>true</expandOthers>
                 <groupingColumn>BucketField_33803839</groupingColumn>
-                <header>Portfolio Health</header>
+                <header>ポートフォリオ状況</header>
                 <legendPosition>Right</legendPosition>
                 <report>DreamHouse_Reports/Portfolio_Health</report>
                 <showPercentage>false</showPercentage>
@@ -65,12 +68,13 @@
                     <column>Property__c.Days_On_Market__c</column>
                 </chartSummary>
                 <componentType>Bar</componentType>
+                <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>CUST_NAME</groupingColumn>
-                <header>Days on Market</header>
+                <header>市場日数</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>DreamHouse_Reports/Days_on_Market</report>
                 <showPercentage>false</showPercentage>
@@ -94,12 +98,13 @@
                     <column>Property__c.Price__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
+                <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>FK_NAME</groupingColumn>
-                <header>Properties by Broker</header>
+                <header>ブローカー毎の物件</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>DreamHouse_Reports/Properties_by_Broker</report>
                 <showPercentage>false</showPercentage>
@@ -115,9 +120,9 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>cc@spring18.org</runningUser>
+    <runningUser>test-mbabyymn1v0l@example.com</runningUser>
     <textColor>#000000</textColor>
-    <title>My Dashboard</title>
+    <title>Dreamhouseダッシュボード</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

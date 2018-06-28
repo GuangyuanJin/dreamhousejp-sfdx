@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <buckets>
         <bucketType>number</bucketType>
         <developerName>BucketField_33803839</developerName>
-        <masterLabel>Days on Market</masterLabel>
+        <masterLabel>市場日数</masterLabel>
         <nullTreatment>z</nullTreatment>
         <sourceColumnName>Property__c.Days_On_Market__c</sourceColumnName>
         <useOther>false</useOther>
@@ -11,20 +11,20 @@
             <sourceValues>
                 <to>30</to>
             </sourceValues>
-            <value>&lt;30 days</value>
+            <value>&lt;30 日</value>
         </values>
         <values>
             <sourceValues>
                 <from>30</from>
                 <to>60</to>
             </sourceValues>
-            <value>30-60 days</value>
+            <value>30-60 日</value>
         </values>
         <values>
             <sourceValues>
                 <from>60</from>
             </sourceValues>
-            <value>>60 days</value>
+            <value>&gt;60 日</value>
         </values>
     </buckets>
     <chart>
@@ -76,7 +76,7 @@
         <field>BucketField_33803839</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Portfolio Health</name>
+    <name>ポートフォリオ状況</name>
     <params>
         <name>co</name>
         <value>1</value>

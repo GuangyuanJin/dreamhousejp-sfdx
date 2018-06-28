@@ -14,7 +14,7 @@
     </aura:method>
     
     <div>
-        <p class="slds-form-element__label">Price range</p>
+        <p class="slds-form-element__label">価格レンジ</p>
         <div aura:id="slider" class="slider" />
     </div>
 

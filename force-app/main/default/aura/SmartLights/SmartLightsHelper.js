@@ -7,8 +7,8 @@
             setTimeout($A.getCallback(function() {
 	            component.set("v.waiting", false);
                 var lights = [];
-                lights.push({label: "Living Room", power:"off", brightness: 75});
-                lights.push({label: "Kitchen", power:"off", brightness: 75});
+                lights.push({label: "リビングルーム", power:"off", brightness: 75});
+                lights.push({label: "キッチン", power:"off", brightness: 75});
                 component.set("v.lights", lights);
             }), 1);
         } else {

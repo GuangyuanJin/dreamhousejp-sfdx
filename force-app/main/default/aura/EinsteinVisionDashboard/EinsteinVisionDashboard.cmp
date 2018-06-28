@@ -8,14 +8,14 @@
 
     <div>
 
-        <lightning:card title="Create Dataset" iconName="utility:setup">
+        <lightning:card title="データセット作成" iconName="utility:setup">
             <lightning:layout verticalAlign="end" class="path-to-zip slds-m-around--small">
                 <lightning:layoutitem flexibility="grow">
-                    <lightning:input label="ZIP file URL:" value="{!v.pathToZip}" />
+                    <lightning:input label="ZIP ファイル URL:" value="{!v.pathToZip}" />
                 </lightning:layoutitem>
                 <lightning:layoutitem>
-                    <lightning:button onclick="{!c.onCreateDataset}">Create Dataset</lightning:button>
-                    <lightning:button onclick="{!c.onRefresh}">Refresh Datasets</lightning:button>
+                    <lightning:button onclick="{!c.onCreateDataset}">データセット作成</lightning:button>
+                    <lightning:button onclick="{!c.onRefresh}">データセット再読込</lightning:button>
                 </lightning:layoutitem>
             </lightning:layout>
         </lightning:card>

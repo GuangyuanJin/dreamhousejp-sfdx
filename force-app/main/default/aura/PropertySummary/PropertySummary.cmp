@@ -24,7 +24,7 @@
 
     <aura:handler event="ltng:selectSObject" action="{!c.recordChangeHandler}"/>
 
-	<lightning:card title="Property Summary" iconName="custom:custom85">
+	<lightning:card title="物件概要" iconName="custom:custom85">
 
         <aura:set attribute="actions">
             <lightning:buttonIcon iconName="utility:edit" variant="bare" alternativeText="Edit Record" onclick="{!c.editRecord}" />
@@ -32,7 +32,7 @@
 
         <aura:if isTrue="{!v.recordId==undefined}">
             <div aura:id="selectSection" class="select slds-text-color--weak">
-                Select a property to see details here
+                物件を選択すると、詳細が表示されます
             </div>
         </aura:if>
 
@@ -49,9 +49,9 @@
                                 city="{!v.property.City__c}"
                                 province="{!v.property.State__c}"
                                 postalCode="{!v.property.Zip__c}"/>    
-                        <p>Beds: {!v.property.Beds__c}
-                        Baths: {!v.property.Baths__c}</p>
-                        <p><lightning:formattedNumber value="{!v.property.Price__c}" style="currency" currencyCode="USD" minimumFractionDigits="0" maximumFractionDigits="0" /></p>
+                        <p>ベッド: {!v.property.Beds__c}
+                        バス: {!v.property.Baths__c}</p>
+                        <p><lightning:formattedNumber value="{!v.property.Price__c}" style="currency" currencyCode="JPY" minimumFractionDigits="0" maximumFractionDigits="0" /></p>
                     </div>
                 </lightning:layoutItem>
             </lightning:layout>

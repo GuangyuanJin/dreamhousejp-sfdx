@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- DreamHouse --></label>
+        <name>DreamHouse</name>
+    </customApplications>
+    <customTabs>
+        <label><!-- Einstein Vision --></label>
+        <name>Einstein_Vision</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- 物件エクスプローラー --></label>
+        <name>Property_Explorer</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- 物件ファインダ --></label>
+        <name>Property_Finder</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- データインポート --></label>
+        <name>Sample_Data_Import</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows>
+            <fullName>Opportunity_Status_Change-1</fullName>
+        </flows>
+        <fullName>Opportunity_Status_Change</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Post_Price_Changes_to_Slack-1</fullName>
+        </flows>
+        <fullName>Post_Price_Changes_to_Slack</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Advertise_New_Property-2</fullName>
+        </flows>
+        <fullName>Advertise_New_Property</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Price_Change_Push_Notification-1</fullName>
+        </flows>
+        <fullName>Price_Change_Push_Notification</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- 活動の記録 --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 新規行動 --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- 新規ToDo --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+</Translations>

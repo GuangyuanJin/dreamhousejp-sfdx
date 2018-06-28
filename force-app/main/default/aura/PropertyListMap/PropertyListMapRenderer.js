@@ -11,7 +11,7 @@
         // Draw the map if it hasn't been drawn yet
 	    if (!component.map) {
             var mapElement = component.find("map").getElement();
-            component.map = L.map(mapElement, {zoomControl: true}).setView([42.356045, -71.085650], 13);
+            component.map = L.map(mapElement, {zoomControl: true}).setView([35.658553, 139.701510], 12);
             component.map.scrollWheelZoom.disable();
             window.L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {attribution: 'Tiles © Esri'}).addTo(component.map);
 	    }

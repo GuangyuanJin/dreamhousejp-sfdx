@@ -9,7 +9,7 @@
                 <aura:if isTrue="{!v.tabIcons}">
 	                <lightning:icon iconName="utility:connected_apps" size="small"/>
                 </aura:if>
-                Lights
+                照明
             </aura:set>
             <c:SmartLights demoMode="{!v.demoMode}"/>
         </lightning:tab>
@@ -18,7 +18,7 @@
                 <aura:if isTrue="{!v.tabIcons}">
 	                <lightning:icon iconName="utility:unlock" size="small"/>
                 </aura:if>    
-                Locks
+                施錠
             </aura:set>
             <c:SmartLocks />
         </lightning:tab>
@@ -27,7 +27,7 @@
                 <aura:if isTrue="{!v.tabIcons}">
 	                <lightning:icon iconName="utility:frozen" size="small"/>
                 </aura:if>    
-                Temp
+                温度
             </aura:set>
             <c:SmartThermostat />
         </lightning:tab>
@@ -36,7 +36,7 @@
                 <aura:if isTrue="{!v.tabIcons}">
 	                <lightning:icon iconName="utility:shield" size="small"/>
                 </aura:if>.    
-                Alarm
+                防犯
             </aura:set>
         </lightning:tab>
     </lightning:tabset>

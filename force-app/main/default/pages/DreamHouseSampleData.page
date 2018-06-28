@@ -57,16 +57,16 @@
                         </svg>
                     </div>
                     <div class="slds-media__body">
-                        <p class="slds-page-header__title slds-truncate slds-align-middle" title="DreamHouse Sample Data">DreamHouse Sample Data</p>
-                        <p class="slds-text-body--small slds-page-header__info">Sample data for the DreamHouse Application</p>
+                        <p class="slds-page-header__title slds-truncate slds-align-middle" title="DreamHouse Sample Data">ドリームハウスサンプルデータ</p>
+                        <p class="slds-text-body--small slds-page-header__info">ドリームハウスサンプルアプリケーションのサンプルデータです。</p>
                     </div>
                 </div>
             </div>
             <div id="content" style="margin:20px">
-                <div style="padding-bottom:20px">Click the button below to initialize the Property, Broker, Favorite, and Bot Command objects with sample data.
-                    <div style="color:red">All existing records in these objects will be deleted.</div>
+                <div style="padding-bottom:20px">以下のボタンをクリックして物件、ブローカー、お気に入りオブジェクトをサンプルデータで初期化します。
+                    <div style="color:red">これらのオブジェクトの既存のレコードは全て削除されます。</div>
                 </div>
-                <button class="slds-button slds-button--brand" onclick="initialize()">Initialize Sample Data</button>
+                <button class="slds-button slds-button--brand" onclick="initialize()">サンプルデータで初期化</button>
             </div>
             
             <div id="spinner" class="slds-spinner_container" style="display:none">
@@ -86,442 +86,381 @@
         }
             
         var brokers = [
-            {
-                name: "Caroline Kingsley",
-                title: "Senior Broker",
-                phone: "617-244-3672",
-                mobile_phone: "617-244-3672",
-                email: "caroline@dreamhouse.demo",
-                picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/caroline_kingsley.jpg"
-            },
-            {
-                name: "Michael Jones",
-                title: "Senior Broker",
-                phone: "617-244-3672",
-                mobile_phone: "617-244-3672",
-                email: "michael@dreamhouse.demo",
-                picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michael_jones.jpg"
-            },
-            {
-                name: "Jonathan Bradley",
-                title: "Senior Broker",
-                phone: "617-244-3672",
-                mobile_phone: "617-244-3672",
-                email: "jonathan@dreamhouse.demo",
-                picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jonathan_bradley.jpg"
-            },
-            {
-                name: "Jennifer Wu",
-                title: "Senior Broker",
-                phone: "617-244-3672",
-                mobile_phone: "617-244-3672",
-                email: "jen@dreamhouse.demo",
-                picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/jennifer_wu.jpg"
-            },
-            {
-                name: "Olivia Green",
-                title: "Senior Broker",
-                phone: "617-244-3672",
-                mobile_phone: "617-244-3672",
-                email: "olivia@dreamhouse.demo",
-                picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/olivia_green.jpg"
-            },
-            {
-                name: "Miriam Aupont",
-                title: "Senior Broker",
-                phone: "617-244-3672",
-                mobile_phone: "617-244-3672",
-                email: "miriam@dreamhouse.demo",
-                picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/miriam_aupont.jpg"
-            },
-            {
-                name: "Michelle Lambert",
-                title: "Senior Broker",
-                phone: "617-244-3672",
-                mobile_phone: "617-244-3672",
-                email: "michelle@dreamhouse.demo",
-                picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/michelle_lambert.jpg"
-            },
-            {
-                name: "Victor Ochoa",
-                title: "Senior Broker",
-                phone: "617-244-3672",
-                mobile_phone: "617-244-3672",
-                email: "victor@dreamhouse.demo",
-                picture: "https://s3-us-west-1.amazonaws.com/sfdc-demo/people/victor_ochoa.jpg"
-            }
-		];
+        {
+            name: "山本 香澄",
+            title: "住宅コンサルタント",
+            phone: "03-2244-3672",
+            mobile_phone: "090-4244-3672",
+            email: "kyamamoto@dreamhouseappjp.io",
+            picture: "https://static.dreamhouseappjp.io/images/dreamhousejp-broker1.jpg"
+        },
+        {
+            name: "新堂 純一",
+            title: "主任住宅コンサルタント",
+            phone: "03-2444-3674",
+            mobile_phone: "090-2344-3672",
+            email: "jshindo@dreamhouseappjp.io",
+            picture: "https://static.dreamhouseappjp.io/images/dreamhousejp-broker2.jpg"
+        },
+        {
+            name: "横山 さおり",
+            title: "住宅コンサルタント",
+            phone: "03-2434-4672",
+            mobile_phone: "090-9244-3672",
+            email: "syokoyama@dreamhouseappjp.io",
+            picture: "https://static.dreamhouseappjp.io/images/dreamhousejp-broker3.jpg"
+        },
+        {
+            name: "秋山 美幸",
+            title: "シニア住宅コンサルタント",
+            phone: "03-4244-3672",
+            mobile_phone: "090-1244-3672",
+            email: "makiyama@dreamhouseappjp.io",
+            picture: "https://static.dreamhouseappjp.io/images/dreamhousejp-broker4.jpg"
+        },
+        {
+            name: "周防 美雨",
+            title: "アソシエイト住宅コンサルタント",
+            phone: "03-6244-3672",
+            mobile_phone: "090-5244-3672",
+            email: "msubo@dreamhouseappjp.io",
+            picture: "https://static.dreamhouseappjp.io/images/dreamhousejp-broker5.jpg"
+        },
+        {
+            name: "吉高 幸司",
+            title: "主任住宅コンサルタント",
+            phone: "03-4244-3672",
+            mobile_phone: "090-0244-3672",
+            email: "kyoshitaka@dreamhouseappjp.io",
+            picture: "https://static.dreamhouseappjp.io/images/dreamhousejp-broker6.jpg"
+        },
+        {
+            name: "高橋 美春",
+            title: "住宅コンサルタント",
+            phone: "03-1244-3672",
+            mobile_phone: "090-2244-3672",
+            email: "mtakahashi@dreamhouseappjp.io",
+            picture: "https://static.dreamhouseappjp.io/images/dreamhousejp-broker7.jpg"
+        },
+        {
+            name: "掛布 洋子",
+            title: "住宅コンサルタント",
+            phone: "03-2444-3672",
+            mobile_phone: "090-1244-3672",
+            email: "ykakefu@dreamhouseappjp.io",
+            picture: "https://static.dreamhouseappjp.io/images/dreamhousejp-broker8.jpg"
+        }
+    
+        ];
     
         var properties = [
-          {
-            address: "18 Henry st",
-            city: "Cambridge",
-            state: "MA",
-            zip: "01742",
-            price: 975000,
-            title: "Stunning Colonial",
+        {
+            address: "北品川4丁目18番",
+            city: "品川",
+            state: "東京都",
+            zip: "1400001",
+            price: 97500000,
+            title: "ウォーターフロントタワー",
             bedrooms: 4,
-            bathrooms: 3,
-            long: -71.11095,
-            lat: 42.35663,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01sq.jpg",
-            tags: "colonial",  
-            description: "Lorem ipsum dolor sit amet",
+            bathrooms: 2,
+            long: 139.736394,
+            lat: 35.621529,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior1.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior1.jpg",
+            tags: "contemporary",
+            description: "目の前に川の流れる見晴らしの良いタワーマンション物件です。",
             broker: 0
-          },
-          {
-            address: "24 Pearl st",
-            city: "Cambridge",
-            state: "MA",
-            zip: "02420",
-            price: 1200000,
-            title: "Ultimate Sophistication",
+        },
+        {
+            address: "六本木2丁目24番",
+            city: "六本木",
+            state: "東京都",
+            zip: "1060032",
+            price: 99000000,
+            title: "モダンリビング",
             bedrooms: 5,
             bathrooms: 4,
-            long: -71.10869,
-            lat: 42.359103,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02sq.jpg",
-            tags: "colonial",  
-            description: "Lorem ipsum dolor sit amet",
+            long: 139.736972,
+            lat: 35.665990,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-interior1.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-interior1.jpg",
+            tags: "colonial",
+            description: "ブランドシステムキッチンが特徴のデザイナーズ物件です。",
             broker: 1
-          },
-          {
-            address: "61 West Cedar st",
-            city: "Boston",
-            state: "MA",
-            zip: "02420",
-            price: 825000,
-            title: "Modern City Living",
+        },
+        {
+            address: "高輪2丁目7番2号",
+            city: "品川",
+            state: "東京都",
+            zip: "1420052",
+            price: 82500000,
+            title: "シティーエントランス",
             bedrooms: 5,
             bathrooms: 4,
-            long: -71.070061,
-            lat: 42.359986,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03sq.jpg",
-            tags: "contemporary",  
-            description: "Lorem ipsum dolor sit amet",
+            long: 139.733924,
+            lat: 35.635758,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-robby1.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-robby1.jpg",
+            tags: "colonial",
+            description: "モダンなエントランスが特徴の駅近物件です。",
             broker: 2
-          },
-          {
-            address: "32 Prince st",
-            city: "Cambridge",
-            state: "MA",
-            zip: "02420",
-            price: 930000,
-            title: "Stunning Victorian",
+        },
+        {
+            address: "南麻布3丁目2番",
+            city: "六本木",
+            state: "東京都",
+            zip: "1060032",
+            price: 93000000,
+            title: "都心の閑静街",
             bedrooms: 5,
             bathrooms: 4,
-            long: -71.110448,
-            lat: 42.360642,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04sq.jpg",
-            tags: "victorian",  
-            description: "Lorem ipsum dolor sit amet",
+            long: 139.728668,
+            lat: 35.650996,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior2.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior2.jpg",
+            tags: "victorian",
+            description: "都心にありながら、周りが静かで良好な生活圏です。六本木ヒルズ徒歩2分",
             broker: 3
-          },
-          {
-            address: "211 Charles Street",
-            city: "Boston",
-            state: "MA",
-            zip: "02420",
-            price: 850000,
-            title: "Waterfront in the City",
+        },
+        {
+            address: "大崎1丁目10番",
+            city: "品川",
+            state: "東京都",
+            zip: "1420052",
+            price: 85000000,
+            title: "アーバンスタイル",
             bedrooms: 3,
             bathrooms: 2,
-            long: -71.084454,
-            lat: 42.368168,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05sq.jpg",
-            tags: "contemporary",  
-            description: "Lorem ipsum dolor sit amet",
+            long: 139.729533,
+            lat: 35.620571, 
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior3.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior3.jpg",
+            tags: "victorian",
+            description: "コストパフォーマンスの良い、築浅物件です。",
             broker: 4
-          },
-          {
-            address: "448 Hanover st",
-            city: "Boston",
-            state: "MA",
-            zip: "02420",
-            price: 725000,
-            title: "Quiet Retreat",
+        },
+        {
+            address: "南品川4丁目48号",
+            city: "品川",
+            state: "東京都",
+            zip: "1420052",
+            price: 72500000,
+            title: "モダンスタイル一軒家",
             bedrooms: 4,
             bathrooms: 2,
-            long: -71.052617,
-            lat: 42.366855,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06sq.jpg",
-            tags: "colonial",  
-            description: "Lorem ipsum dolor sit amet",
+            long: 139.738493,
+            lat: 35.608954,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior4.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior4.jpg",
+            tags: "victorian",
+            description: "品川駅徒歩15分圏内にありながら、ゆったりとした贅沢な土地使いの物件が到着です。",
             broker: 5
-          },
-          {
-            address: "127 Endicott st",
-            city: "Boston",
-            state: "MA",
-            zip: "02420",
-            price: 450000,
-            title: "City Living",
+        },
+        {
+            address: "北品川1丁目2番7号",
+            city: "品川",
+            state: "東京都",
+            zip: "1420052",
+            price: 45000000,
+            title: "シティリビング",
             bedrooms: 3,
             bathrooms: 1,
-            long: -71.057352,
-            lat: 42.365003,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07sq.jpg",
-            tags: "colonial",  
-            description: "Lorem ipsum dolor sit amet",
+            long: 139.739612,
+            lat: 35.622558,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior5.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior5.jpg",
+            tags: "victorian",
+            description: "品川地区で人気のシティリビングシリーズです。",
             broker: 6
-          },
-          {
-            address: "48 Brattle st",
-            city: "Cambridge",
-            state: "MA",
-            zip: "02420",
-            price: 450000,
-            title: "Heart of Harvard Square",
+        },
+        {
+            address: "六本木6丁目10番",
+            city: "六本木",
+            state: "東京都",
+            zip: "1060032",
+            price: 45000000,
+            title: "流行の中心地",
             bedrooms: 5,
             bathrooms: 4,
-            long: -71.121653,
-            lat: 42.374117,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10sq.jpg",
-            tags: "victorian",  
-            description: "Lorem ipsum dolor sit amet",
+            long: 139.729989,
+            lat: 35.658193,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior6.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior6.jpg",
+            tags: "victorian",
+            description: "六本木の中心にあるラグジュアリーマンション。コンドミニアムタイプもあり",
             broker: 7
-          },
-          {
-            address: "121 Harborwalk",
-            city: "Boston",
-            state: "MA",
-            zip: "02420",
-            price: 450000,
-            title: "Seaport District Retreat",
+        },
+        {
+            address: "高輪3丁目2番",
+            city: "品川",
+            state: "東京都",
+            zip: "1420052",
+            price: 45000000,
+            title: "閑静かつモダン",
             bedrooms: 3,
             bathrooms: 3,
-            long: -71.049327,
-            lat: 42.35695,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09sq.jpg",
-            tags: "contemporary",  
-            description: "Lorem ipsum dolor sit amet",
+            long: 139.732456,
+            lat: 35.635150,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior7.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior7.jpg",
+            tags: "colonial",              
+            description: "高級住宅街の中でも、お買い得なプライス",
             broker: 0
-          },
-          {
-            address: "503 Park Drive",
-            city: "Boston",
-            state: "MA",
-            zip: "02420",
-            price: 650000,
-            title: "City Living",
+        },
+        {
+            address: "北新宿2丁目6番",
+            city: "新宿",
+            state: "東京都",
+            zip: "1690074",
+            price: 45000000,
+            title: "駅近ハイクラス物件",
+            bedrooms: 3,
+            bathrooms: 3,
+            long: 139.690307,
+            lat: 35.701432,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior8.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior8.jpg",
+            tags: "colonial",              
+            description: "新宿にありながら、広い間取りと駅近物件。",
+            broker: 0
+        },            
+        {
+            address: "南新宿3丁目3番",
+            city: "新宿",
+            state: "東京都",
+            zip: "1690074",
+            price: 45000000,
+            title: "ハイクラス物件",
+            bedrooms: 3,
+            bathrooms: 3,
+            long: 139.726011,
+            lat: 35.703752,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior9.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior9.jpg",
+            tags: "contemporary",              
+            description: "徒歩圏内にスーパーと病院あり",
+            broker: 0
+        },
+        {
+            address: "西新宿1丁目4番",
+            city: "新宿",
+            state: "東京都",
+            zip: "1690074",
+            price: 95000000,
+            title: "超高層タワーマンション",
+            bedrooms: 3,
+            bathrooms: 3,
+            long: 139.695606,
+            lat: 35.694131,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior10.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior10.jpg",
+            tags: "contemporary",              
+            description: "一度は住んでみたい憧れの物件が登場",
+            broker: 0
+        },
+        {
+            address: "南品川6丁目4号",
+            city: "品川",
+            state: "東京都",
+            zip: "1420052",
+            price: 65000000,
+            title: "シティリビング",
             bedrooms: 2,
             bathrooms: 2,
-            long: -71.105475,
-            lat: 42.347400,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08sq.jpg",
-            tags: "contemporary",  
-            description: "Lorem ipsum dolor sit amet",
+            long: 139.738228,
+            lat: 35.611609,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-interior2.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-interior2.jpg",
+            tags: "colonial",
+            description: "人気のシティリビングが品川にも登場",
             broker: 1
-          },
-          {
-            address: "95 Gloucester st",
-            city: "Boston",
-            state: "MA",
-            zip: "02420",
-            price: 690000,
-            title: "Architectural Details",
+        }
+        /*
+        {
+            address: "港南2丁目9番",
+            city: "品川",
+            state: "東京都",
+            zip: "1420052",
+            price: 69000000,
+            title: "デザイナーズ住宅",
             bedrooms: 3,
             bathrooms: 3,
-            lat: 42.349693,
-            long: -71.084407,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11sq.jpg",
-            tags: "contemporary",  
-            description: "Lorem ipsum dolor sit amet",
+            lat: 139.733185,
+            long: 35.624670,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-interior3.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-interior3.jpg",
+            tags: "現代的",
+            description: "品川地区のひときは目立つデザイナーズ物件",
             broker: 0
-          },
-          {
-            address: "145 Commonwealth ave",
-            city: "Boston",
-            state: "MA",
-            zip: "02420",
-            price: 845000,
-            title: "Luxury Redefined",
+        },
+        {
+            address: "港南3丁目45番",
+            city: "品川",
+            state: "東京都",
+            zip: "1420052",
+            price: 84500000,
+            title: "コンテンポラリーラグジュアリー",
             bedrooms: 4,
             bathrooms: 3,
-            lat: 42.352466,
-            long: -71.075311,
-            pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12.jpg",
-            thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12sq.jpg",
-            tags: "colonial",  
-            description: "Lorem ipsum dolor sit amet",
+            lat: 139.748623,
+            long: 35.633177,
+            pic: "https://static.dreamhouseappjp.io/images/dreamhousejp-interior4.jpg",
+            thumb: "https://static.dreamhouseappjp.io/images/dreamhousejp-interior4.jpg",
+            tags: "ラグジュアリー",              
+            description: "ラグジュアリーな住居をお探しであればこちらがお勧め。",
             broker: 1
-          },
-            {
-                address: "24 Euston St",
-                city: "Brookline",
-                state: "MA",
-                zip: "02446",
-                price: 690000,
-                title: "Historical Victorian",
-                bedrooms: 5,
-                bathrooms: 3,
-                lat: 42.348087,
-                long: -71.109131,
-                pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian01.jpg",
-                thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian01sq.jpg",
-                tags: "victorian",  
-                description: "Lorem ipsum dolor sit amet",
-                broker: 2
-            },
-            {
-                address: "650 Kendall St",
-                city: "Cambridge",
-                state: "MA",
-                zip: "02142",
-                price: 730000,
-                title: "Unique Victorian",
-                bedrooms: 6,
-                bathrooms: 4,
-                lat: 42.364772,
-                long: -71.080640,
-                pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian02.jpg",
-                thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian02sq.jpg",
-                tags: "victorian",  
-                description: "Lorem ipsum dolor sit amet",
-                broker: 3
-            },
-            {
-                address: "252 Charles St",
-                city: "Cambridge",
-                state: "MA",
-                zip: "02141",
-                price: 790000,
-                title: "One of a kind",
-                bedrooms: 7,
-                bathrooms: 3,
-                lat: 42.368269,
-                long: -71.085920,
-                pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian03.jpg",
-                thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian03sq.jpg",
-                tags: "victorian",  
-                description: "Lorem ipsum dolor sit amet",
-                broker: 4
-            },
-            {
-                address: "105 Brattle St",
-                city: "Cambridge",
-                state: "MA",
-                zip: "02138",
-                price: 950000,
-                title: "Location Location!",
-                bedrooms: 5,
-                bathrooms: 5,
-                lat: 42.376511,
-                long: -71.126194,
-                pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian06.jpg",
-                thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian06sq.jpg",
-                tags: "victorian",  
-                description: "Lorem ipsum dolor sit amet",
-                broker: 5
-            },
-            {
-                address: "223 Huron Ave",
-                city: "Cambridge",
-                state: "MA",
-                zip: "02138",
-                price: 850000,
-                title: "Recently Updated",
-                bedrooms: 4,
-                bathrooms: 3,
-                lat: 42.381437,
-                long: -71.132681,
-                pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian07.jpg",
-                thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian07sq.jpg",
-                tags: "victorian",  
-                description: "Lorem ipsum dolor sit amet",
-                broker: 6
-            },
-            {
-                address: "30 Peterborough St",
-                city: "Boston",
-                state: "MA",
-                zip: "02215",
-                price: 650000,
-                title: "Character and Details",
-                bedrooms: 5,
-                bathrooms: 4,
-                lat: 42.343890,
-                long: -71.096371,
-                pic: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian04.jpg",
-                thumb: "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/victorian04sq.jpg",
-                tags: "victorian",  
-                description: "Lorem ipsum dolor sit amet",
-                broker: 0
-            }
+        }*/
             
         ];
             
 		var botCommands = [
-            {
-                name: "Find Account",
+        {
+                name: "取引先を探す",
                 apexClass: "HandlerFindAccount",
-                pattern: "(?i).*account ([A-Za-z0-9]*)",
-                sampleUtterance: "Account United"
+                pattern: "(?i).*取引先検索 (.*)",
+                sampleUtterance: "取引先検索 United"
 			},
             {
-                name: "Report",
-                apexClass: "HandlerReport",
-                pattern: "(?i).*([A-Za-z0-9]*) report",
-                sampleUtterance: "open market report"
-			},
-            {
-                name: "Dashboard",
-                apexClass: "HandlerDashboard",
-                pattern: "(?i).*([A-Za-z0-9]*) dashboard",
-                sampleUtterance: "open portfolio dashboard"
-			},
-            {
-                name: "Find Contact",
+                name: "取引先責任者を探す",
                 apexClass: "HandlerFindContact",
-                pattern: "(?i).*contact ([A-Za-z0-9]*)",
-                sampleUtterance: "Contact jo"
+                pattern: "(?i).*取引先責任者検索 (.*)",
+                sampleUtterance: "取引先責任者検索 jo"
 			},
             {
-                name: "Find House",
+                name: "物件を探す",
                 apexClass: "HandlerFindProperties",
-                pattern: "(?i)find house",
-                sampleUtterance: "Find house"
+                pattern: "(?i)物件検索",
+                sampleUtterance: "物件検索"
 			},
             {
-                name: "Find Properties by Bedrooms",
+                name: "部屋数から物件を探す",
                 apexClass: "HandlerFindPropertiesByBedrooms",
-                pattern: "(?i)([A-Za-z0-9]*) bedrooms in ([A-Za-z]*)",
-                sampleUtterance: "3 bedrooms in Boston"
+                pattern: "(?i)部屋数:([0-9]*) 場所:(.*)",
+                sampleUtterance: "部屋数:3 場所:新宿"
 			},
             {
-                name: "Help",
+                name: "ヘルプ",
                 apexClass: "HandlerHelp",
-                pattern: "(?i)help",
-                sampleUtterance: "Help"
+                pattern: "(?i)ヘルプ",
+                sampleUtterance: "ヘルプ"
 			},
             {
-                name: "My Open Cases",
+                name: "私のオープンケース",
                 apexClass: "HandlerMyOpenCases",
-                pattern: "(?i).*open cases.*",
-                sampleUtterance: "My Open Cases"
+                pattern: "(?i).*オープンケース.*",
+                sampleUtterance: "私のオープンケース"
 			},
             {
-                name: "Pipeline",
+                name: "パイプライン",
                 apexClass: "HandlerPipeline",
-                pattern: "(?i).*pipeline.*",
-                sampleUtterance: "My Pipeline"
+                pattern: "(?i).*パイプライン.*",
+                sampleUtterance: "私のパイプライン"
 			},
             {
-                name: "Quarter",
+                name: "四半期売上",
                 apexClass: "HandlerQuarter",
-                pattern: "(?i).*quarter.*",
-                sampleUtterance: "My Quarter"
+                pattern: "(?i).*四半期売上.*",
+                sampleUtterance: "私の四半期売上"
 			},
             {
                 name: "SOQL",
@@ -530,29 +469,29 @@
                 sampleUtterance: "SELECT Name FROM Contact LIMIT 5"
 			},
             {
-                name: "Top Opportunities",
+                name: "トップ商談",
                 apexClass: "HandlerTopOpportunities",
-                pattern: "(?i).*top (\d+) opportunities",
-                sampleUtterance: "Top 3 opportunities"
+                pattern: "(?i).*トップ (\\d+) 商談",
+                sampleUtterance: "トップ 3 商談"
 			},
             {
-                name: "Travel Approval",
+                name: "出張承認",
                 apexClass: "HandlerTravelApproval",
-                pattern: "(?i)travel approval",
-                sampleUtterance: "Travel Approval"
+                pattern: "(?i)出張承認",
+                sampleUtterance: "出張承認"
 			},
-            {
-                name: "Image search",
+           {
+                name: "画像検索",
                 apexClass: "HandlerImageBasedSearch",
-                pattern: "(?i)search houses like this",
-                sampleUtterance: "search houses like this"
+                pattern: "(?i)物件画像検索",
+                sampleUtterance: "物件画像検索 (+ファイルを選択)"
 			},
             {
-                name: "File Upload",
+                name: "ファイルアップロード",
                 apexClass: "HandlerFileUpload",
-                pattern: "(?i)upload",
-                sampleUtterance: "upload"
-			},
+                pattern: "(?i)アップロード",
+                sampleUtterance: "アップロード (+ファイルを選択)"
+			}
             
 		];
     
@@ -563,7 +502,7 @@
                     if (event.status) {
                         loadRecords();
                     } else {
-                        alert("Something went wrong deleting existing records");
+                        alert("既存のレコードを削除する際に問題が発生しました");
                     }
                 });
         }
@@ -580,11 +519,11 @@
             Promise.all(promises).then(
                 function() {
                     showSpinner(false);
-                    showStatus("Successfully imported " + properties.length + " properties, " + brokers.length + " brokers, and " + botCommands.length + " bot commands");    
+                    showStatus(properties.length + " 件の物件と, " + brokers.length + " 人の担当者, " + botCommands.length + " 個のBotコマンドのインポートが成功しました");    
                 },
                 function(error) {
                     showSpinner(false);
-                    showStatus("A problem has occurred. " + error);
+                    showStatus("エラーが発生しました。 " + error);
                 });
         }
             
@@ -599,7 +538,7 @@
                         for (var j=0; j<properties.length; j++) {
                             if (properties[j].broker == index) {
                                 properties[j].name = properties[j].address; 
-                                properties[j].status = "Available"; 
+                                properties[j].status = "公開中"; 
                                 properties[j].brokerId = brokerId[0];
                                 properties[j].assessed = properties[j].price * getRandomNumber(65, 90) / 100;
                                 properties[j].dateListed = new Date(new Date() - getRandomNumber(3, 50) * 86400000);

@@ -1,7 +1,7 @@
 <aura:component implements="flexipage:availableForAllPageTypes"
                 access="global">
     
-    <aura:attribute name="principal" type="Integer" default="200000" access="global"/>
+    <aura:attribute name="principal" type="Integer" default="20000000" access="global"/>
     <aura:attribute name="years" type="Integer" default="30" access="global"/>
     <aura:attribute name="rate" type="Integer" default="5" access="global"/>
     <aura:attribute name="monthlyPayment" type="Decimal"/>
@@ -15,18 +15,18 @@
 
 	<div>
         <div class="input">
-            <lightning:input aura:id="principal" type="number" label="Principal:" value="{!v.principal}"/>
-            <lightning:select name="select1" label="Years:" value="{!v.years}">
+            <lightning:input aura:id="principal" type="number" label="価格:" value="{!v.principal}"/>
+            <lightning:select name="select1" label="年数:" value="{!v.years}">
                 <option value="20">20</option>
                 <option value="25">25</option>
                 <option value="30">30</option>
                 <option value="35">35</option>
     		</lightning:select>
-            <lightning:input aura:id="rate" type="text" label="Rate:" value="{!v.rate}"/>
+            <lightning:input aura:id="rate" type="text" label="レート:" value="{!v.rate}"/>
         </div>
         <div class="result">
-            Monthly Payment: 
-            <lightning:formattedNumber value="{!v.monthlyPayment}" style="currency" currencyCode="USD"/>
+            月々のお支払い: 
+            <lightning:formattedNumber value="{!v.monthlyPayment}" style="currency" currencyCode="JPY"/>
         </div>
     </div>    
     

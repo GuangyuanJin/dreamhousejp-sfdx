@@ -1,7 +1,7 @@
 ({
     readFile: function (component, helper, file) {
         if (!file.type.match(/(image.*)/)) {
-            return alert('Image file not supported');
+            return alert('この画像ファイルはサポートされていません');
         }
         var reader = new FileReader();
         reader.onloadend = function () {
@@ -29,7 +29,7 @@
             var state = a.getState();
             if (state === 'ERROR') {
                 console.log(a.getError());
-                alert("An error has occurred");
+                alert("エラーが発生しました");
             }
             var result = a.getReturnValue();
             var predictions = [];
@@ -75,7 +75,7 @@
                     predictions = [
                         { label: "colonial", formattedProbability: "66.2%" },
                         { label: "victorian", formattedProbability: "31.7%" },
-                        { label: "victorian", formattedProbability: "2.1%" },
+                        { label: "contemporary", formattedProbability: "2.1%" },
                     ];
                 }
                 console.log(predictions);

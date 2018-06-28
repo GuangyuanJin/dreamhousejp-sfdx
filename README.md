@@ -1,74 +1,80 @@
-# DreamHouse Sample Application
+# DreamHouse サンプルアプリケーション日本語版
 
-[![CircleCI](https://circleci.com/gh/dreamhouseapp/dreamhouse-sfdx.svg?style=svg)](https://circleci.com/gh/dreamhouseapp/dreamhouse-sfdx)
+[![CircleCI](https://circleci.com/gh/dreamhouseapp-jp/dreamhousejp-sfdx.svg?style=svg)](https://circleci.com/gh/dreamhouseapp-jp/dreamhousejp-sfdx)
 
-Dreamhouse is a sample application for the real estate business built on the Salesforce platform. It allows brokers to manage their properties and customers to find their dream house.
 
-## Table of contents
+オリジナルの英語版は以下にあります。
+https://github.com/dreamhouseapp/dreamhouse-sfdx
 
-* [Installation instructions](#installation-instructions)
-    * [Installing DreamHouse using Salesforce DX](#installing-dreamhouse-using-salesforce-dx)
-    * [Installing DreamHouse using an unlocked package](#installing-dreamhouse-using-an-unlocked-package)
-* [Code highlights](#code-highlights)
-* [Additional resources](#additional-resources)
 
-## Installation Instructions
+Dreamhouseは不動産ビジネスをSalesforce Platformで構築したサンプルアプリケーションです。
 
-There are two ways to install DreamHouse:
-- Using Salesforce DX 
-- Using an unlocked package
+## 目次
 
-### Installing DreamHouse using Salesforce DX
-This is the recommended installation option for developers who want to experience the app and the code.
+* [インストール手順](#インストール手順)
+    * [Salesforce DX を使ってDreamhouseをインストールする](#Salesforce DX を使ってDreamhouseをインストールする)
+<!--    * [ロック解除済みパッケージを使ってDramHouseをインストールする](#ロック解除済みパッケージを使ってDramHouseをインストールする)-->
+<!-- * [コードハイライト](#コードハイライト)-->
+* [追加リソース](#追加リソース)
+<!--
+## インストール手順
 
-1. Install Salesforce DX. Enable the Dev Hub in your org or sign up for a Dev Hub trial org and install the Salesforce DX CLI. Follow the instructions in the [Salesforce DX Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm?search_text=trial%20hub%20org) or in the [App Development with Salesforce DX](https://trailhead.salesforce.com/modules/sfdx_app_dev) Trailhead module.
+2種類の方法でDreamHouseをインストールできます:
+- Salesforce DX を利用する
+- ロック解除済みパッケージを利用する
+-->
+### Salesforce DX を使ってDreamhouseをインストールする
+こちらはアプリケーションとコーディングのエクスペリエンスを求める開発者にとって推奨されるインストール方法です
 
-1. Clone the **dreamhouse-sfdx** repository:
+1. Salesforce DXをインストールします。Dev Hubを組織で有効化するか、Dev Hubトライアル組織にサインアップし、Salesforce DX CLIをインストールします。 [Salesforce DX 設定ガイド](https://developer.salesforce.com/docs/atlas.ja-jp.sfdx_setup.meta/sfdx_setup/sfdx_setup_enable_devhub.htm) か [Salesforce DX を使用したアプリケーション開発](https://trailhead.salesforce.com/ja/modules/sfdx_app_dev) Trailheadモジュールの手順に従います。
+
+1. **dreamhousejp-sfdx** リポジトリをクローンします:
     ```
-    git clone https://github.com/dreamhouseapp/dreamhouse-sfdx
-    cd dreamhouse-sfdx
+    git clone https://github.com/dreamhouseapp-jp/dreamhousejp-sfdx
+    cd dreamhousejp-sfdx
     ```
 
-1. Create a scratch org and provide it with an alias of your choice (**dh** in the command below):
+1. スクラッチ組織を生成し、任意のエイリアスを定義します (**dh** を以下のコマンドでは定義):
     ```
     sfdx force:org:create -s -f config/project-scratch-def.json -a dh
     ```
 
-1. Push the app to your scratch org:
+1. アプリケーションをスクラッチ組織にプッシュします:
     ```
     sfdx force:source:push
     ```
 
-1. Assign the **dreamhouse** permission set to the default user:
+1. **dreamhouse** 権限セットをデフォルトユーザにアサインします:
     ```
     sfdx force:user:permset:assign -n dreamhouse
     ```
 
-1. Open the scratch org:
+1. スクラッチ組織を開きます:
     ```
     sfdx force:org:open
     ```
 
-1. Select **DreamHouse** in the App Launcher
+1. アプリケーションランチャーから **DreamHouse** を選択します
 
-1. Click the **Data Import** tab and click **Initialize Sample Data**
+1. **データインポート** タブをクリックし、 **サンプルデータで初期化** をクリックします
+<!--
+### ロック解除済みパッケージを使ってDramHouseをインストールする
+こちらは非開発者に推奨のインストール方法です。コードを変更する予定がなく、サンプルアプリの体験のみが目的の場合はこちらを利用します。
 
-### Installing DreamHouse using an unlocked package
-This is the recommended option for non developers. Use this option if you want to experience the sample app but do not plan to modify the code.
+1. Developer Editionに [サインアップ](https://developer.salesforce.com/signup) します。
 
-1. [Sign up](https://developer.salesforce.com/signup) for a developer edition.
+1. 私のドメインを有効化します。 [こちら](https://trailhead.salesforce.com/ja/modules/identity_login/units/identity_login_my_domain) の手順に従って私のドメインを有効化してください。
 
-1. Enable My Domain. Follow the instructions to enable My Domain [here](https://trailhead.salesforce.com/projects/quickstart-lightning-components/steps/quickstart-lightning-components1).
+1. [こちらのリンク](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000009UeX) をクリックし、DreamHouseのロック解除済みパッケージをあなたのDeveloper Edition組織にインストールします。
 
-1. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000009UeX) to install the DreamHouse unlocked package into your developer edition org.
+1. 画面が出たら **全てのユーザ にインストール** を選択し、外部サイトへのアクセス(api.lifx.com, dreamhouzz-push-server.herokuapp.com, and hooks.slack.com)を許可します。
 
-1. Select **Install for All Users**. When prompted, make sure you grant access to the external sites (api.lifx.com, dreamhouzz-push-server.herokuapp.com, and hooks.slack.com).
+1. **DreamHouse** をアプリケーションランチャーで選択します。
 
-1. Select **DreamHouse** in the App Launcher.
-
-1. Click the **Data Import** tab and click **Initialize Sample Data**.
-
-## Code highlights
+1. **データインポート** タブをクリックし、**サンプルデータで初期化** をクリックします。
+-->
+<!--
+## コードハイライト
 
 ### Lightning components
 DreamHouse features a large number of Lightning Components to enhance the user experience. Lightning Components are used on the Property record page, on an app pages (**Property Finder** and **Property Explorer**), in the utility bar, and as quick actions.
@@ -131,14 +137,15 @@ The [VisualSearchBox](force-app/main/default/aura/VisualSearchBox) component lev
 1. Repeat the last step for the **Property Explorer** page.
 
 You can now search houses by uploading (or dropping) a picture in the visual search box that is part of the Filters component on the **Property Finder** and **Property Explorer** pages. 
+-->
 
-## Additional resources
-DreamHouse has many more features not discussed here. For example, DreamHouse also demonstrates how to:
+## 追加リソース
+DreamHouse はここで解説していない様々な機能を提供しています。例えばDreamHouseでは以下の実現方法をデモンストレーションしています:
 
-- Use the Salesforce Mobile App
-- Create a customer engagement mobile app with the Mobile SDK
-- Automate processes with Process Builder, including sending push notification messages to the customer engagement app
-- Integrate with Alexa, Slack, and Facebook Messenger
-- Integrate with IoT devices like smart lights, smart thermostats, and smart locks
+- Salesforceモバイルアプリの利用
+- Moible SDKを使った顧客エンゲージメントモバイルアプリの構築
+- プロセスビルダーを使ったプロセスの自動化や、プッシュ通知を顧客エンゲージメントアプリへ送信する方法
+- Alexa, Slack, Facebook MessengerおよびLineとのインテグレーション
+- スマートライト, スマートサーモスタットおよびスマートロックといったIoTデバイスとのインテグレーション
 
-Head over to [dreamhouseapp.io](http://dreamhouseapp.io) to learn more.
+より詳しくは [dreamhouseappjp.io](http://dreamhouseappjp.io) をご覧ください。

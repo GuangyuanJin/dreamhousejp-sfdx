@@ -6,7 +6,7 @@
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
-    <description>DreamHouse helps you connect with your Customers in a whole new way.</description>
+    <description>DreamHouseは全く新しい方法で顧客とつながるためのデモアプリケーションです。</description>
     <formFactors>Large</formFactors>
     <label>DreamHouse</label>
     <navType>Standard</navType>

@@ -1,13 +1,13 @@
 ({
     onInit: function(component, event, helper) {
         component.set('v.datasetColumns', [
-            {label: 'Label', fieldName: 'name', type: 'text'},
-            {label: 'Examples', fieldName: 'numExamples', type: 'number'}
+            {label: 'ラベル', fieldName: 'name', type: 'text'},
+            {label: '例', fieldName: 'numExamples', type: 'number'}
         ]);
         component.set('v.modelColumns', [
             {label: 'Model Id', fieldName: 'modelId', type: 'text'},
-            {label: 'Progress', fieldName: 'progress', type: 'text'},
-            {label: 'Status', fieldName: 'status', type: 'text'}
+            {label: '進捗', fieldName: 'progress', type: 'text'},
+            {label: '状況', fieldName: 'status', type: 'text'}
         ]);
     },
 

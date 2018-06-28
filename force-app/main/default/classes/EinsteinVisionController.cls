@@ -13,13 +13,13 @@ global with sharing class EinsteinVisionController {
     // You can upload the 'einstein_platform.pem' into your Salesforce org as 'File' sObject and read it as below
     private static String getAccessToken() {
         if (settings == null || String.isEmpty(settings.Einstein_Vision_Email__c)) {
-            throw new AuraHandledException('Cannot create Einstein Vision token: "Einstein Vision Email" not defined in Custom Settings');
+            throw new AuraHandledException('Einstein Visionトークンの作成ができません: "Einstein Vision Email" 項目がカスタム設定に定義されていません');
         }
         ContentVersion base64Content;
         try {
         	base64Content = [SELECT Title, VersionData FROM ContentVersion where Title='einstein_platform' LIMIT 1];
         } catch (Exception e) {
-	        throw new AuraHandledException('Cannot create Einstein Vision token: einstein_platform.pem file not found');    
+	        throw new AuraHandledException('Einstein Visionトークンの作成ができません: einstein_platform.pem ファイルが見つかりません');    
         }
         String keyContents = base64Content.VersionData.tostring();
         keyContents = keyContents.replace('-----BEGIN RSA PRIVATE KEY-----', '');
@@ -55,7 +55,7 @@ global with sharing class EinsteinVisionController {
         try {
 			access_token = EinsteinVisionController.getAccessToken();
         } catch (Exception e) {
-			throw new AuraHandledException('Cannot create Einstein Vision token. Did you upload the einstein_platform.pem file and specify the Einstein Vision email address to use in Custom Settings?');			
+			throw new AuraHandledException('Einstein Visionトークンの作成ができません. einstein_platform.pem ファイルのアップロードと、 Einstein Vision email をカスタム設定で定義していることを確認してください。');			
         }
         List<Prediction> predictions = EinsteinVisionController.predictInternal(content, access_token, modelId, true);
         return predictions;

@@ -10,7 +10,7 @@
 
     <aura:handler event="ltng:selectSObject" action="{!c.recordChangeHandler}" />
 
-    <lightning:card iconName="custom:custom90" title="{! 'Similar Properties by ' + v.searchCriteria}">
+    <lightning:card iconName="custom:custom90" title="{! '似ている物件 : ' + v.searchCriteria}">
         <aura:iteration items="{!v.similarProperties}" var="property" indexVar="i">
             <lightning:layout verticalAlign="center" class="row">
                 <lightning:layoutItem padding="horizontal-small">
@@ -23,9 +23,9 @@
                     <div>
                         <lightning:formattedAddress street="{!property.Address__c}" city="{!property.City__c}" province="{!property.State__c}" postalCode="{!property.Zip__c}"
                         />
-                        <p>Beds: {!property.Beds__c} Baths: {!property.Baths__c}</p>
+                        <p>ベッド: {!property.Beds__c} バス: {!property.Baths__c}</p>
                         <p>
-                            <lightning:formattedNumber value="{!property.Price__c}" style="currency" currencyCode="USD" minimumFractionDigits="0"
+                            <lightning:formattedNumber value="{!property.Price__c}" style="currency" currencyCode="JPY" minimumFractionDigits="0"
                                 maximumFractionDigits="0" />
                         </p>
                     </div>

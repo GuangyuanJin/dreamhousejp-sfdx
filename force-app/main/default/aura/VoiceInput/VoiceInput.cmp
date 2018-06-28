@@ -9,7 +9,7 @@
 
     <lightning:layout verticalAlign="center">
         <lightning:layoutItem flexibility="grow">
-            <input aura:id="utterance" type="text" class="slds-input" placeholder="How can I assist you?" onkeypress="{!c.onKeyPress}" />
+            <input aura:id="utterance" type="text" class="slds-input" placeholder="何をお探しですか?" onkeypress="{!c.onKeyPress}" />
         </lightning:layoutItem>
         <lightning:layoutItem >
             <div class="audio-icon">
@@ -18,7 +18,7 @@
                         <div class="slds-icon-eq__bar"></div>
                         <div class="slds-icon-eq__bar"></div>
                         <div class="slds-icon-eq__bar"></div>
-                        <span class="slds-assistive-text">Text alternative when needed</span>
+                        <span class="slds-assistive-text">テキストを入力することもできます</span>
                     </div>
                     <aura:set attribute="else">
                         <lightning:buttonIcon iconName="utility:unmuted" variant="bare" size="large" onclick="{!c.onTalk}"></lightning:buttonIcon>

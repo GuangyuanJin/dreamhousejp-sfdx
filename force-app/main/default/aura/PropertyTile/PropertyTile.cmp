@@ -10,8 +10,8 @@
         	<div class="lower-third">
             	<h1 class="truncate">{#v.property.Address__c}</h1>
             	<p>{#v.property.City__c}, {#v.property.State__c}</p>
-            	<p>Beds: {#v.property.Beds__c}&nbsp;&nbsp;&nbsp;Baths: {#v.property.Baths__c}</p>
-            	<p><lightning:formattedNumber value="{#v.property.Price__c}" style="currency" currencyCode="USD" minimumFractionDigits="0" maximumFractionDigits="0"/></p>
+            	<p>ベッド: {#v.property.Beds__c}&nbsp;&nbsp;&nbsp;バス: {#v.property.Baths__c}</p>
+            	<p><lightning:formattedNumber value="{#v.property.Price__c}" style="currency" currencyCode="JPY" minimumFractionDigits="0" maximumFractionDigits="0"/></p>
         	</div>
 	        <lightning:buttonIcon iconName="utility:zoomin" variant="bare-inverse" size="medium" onclick="{!c.navigateToDetailsView}" class="open-button"/>
     	</div>

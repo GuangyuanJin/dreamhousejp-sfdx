@@ -19,13 +19,13 @@
 
     onReset: function (component, event, helper) {
         component.set("v.searchKey", '');
-        component.set("v.minPrice", 200000);
-        component.set("v.maxPrice", 1200000);
+        component.set("v.minPrice", 20000000);
+        component.set("v.maxPrice", 120000000);
         component.set("v.numberBedrooms", 0);
         component.set("v.numberBathrooms", 0);
         component.set("v.visualSearchKey", '');
         var priceRange = component.find('priceRange');
-        priceRange.setValues(200000, 1200000);
+        priceRange.setValues(20000000, 120000000);
         helper.fireFilterChangeEvent(component);
     },
 

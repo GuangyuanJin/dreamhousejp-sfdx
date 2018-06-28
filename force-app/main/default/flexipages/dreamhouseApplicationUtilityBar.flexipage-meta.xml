@@ -53,7 +53,7 @@
             <componentInstanceProperties>
                 <name>label</name>
                 <type>decorator</type>
-                <value>Mortgage Calculator</value>
+                <value>住宅ローン計算機</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>principal</name>

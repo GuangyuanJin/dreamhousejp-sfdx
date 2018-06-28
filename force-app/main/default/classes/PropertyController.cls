@@ -81,7 +81,7 @@ global with sharing class PropertyController {
         } else {
             return [
                 SELECT Id, Name, Address__c, City__c, State__c, Zip__c, Beds__c, Baths__c, Price__c, Broker__c, Status__c, Thumbnail__c 
-                FROM Property__c WHERE Id != :propertyId AND Price__c > :price - 100000 AND Price__c < :price + 100000
+                FROM Property__c WHERE Id != :propertyId AND Price__c > :price - 10000000 AND Price__c < :price + 10000000
             ];
         }
     }
