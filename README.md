@@ -1,8 +1,5 @@
 # DreamHouse サンプルアプリケーション日本語版
 
-[![CircleCI](https://circleci.com/gh/dreamhouseapp-jp/dreamhousejp-sfdx.svg?style=svg)](https://circleci.com/gh/dreamhouseapp-jp/dreamhousejp-sfdx)
-
-
 オリジナルの英語版は以下にあります。
 https://github.com/dreamhouseapp/dreamhouse-sfdx
 
