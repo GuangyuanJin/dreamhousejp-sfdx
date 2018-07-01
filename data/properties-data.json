@@ -1,256 +1,277 @@
 {
   "records": [
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "18HenryStRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef1"
+          },
+          "Name": "北品川4丁目18番",
+          "Address__c": "北品川4丁目18番",
+          "City__c": "品川",
+          "State__c": "東京都",
+          "Zip__c": "1400001",
+          "Price__c": 97500000,
+          "Title__c": "ウォーターフロントタワー",
+          "Beds__c": 4,
+          "Baths__c": 2,
+          "Location__Longitude__s": 139.736394,
+          "Location__Latitude__s": 35.621529,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior1.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior1.jpg",
+          "Description__c": "目の前に川の流れる見晴らしの良いタワーマンション物件です。",
+          "Broker__c": "@Yamamoto_Broker__cRef1"
       },
-      "Name": "Stunning Victorian",
-      "Address__c": "18 Henry St",
-      "City__c": "Cambridge",
-      "State__c": "MA",
-      "Zip__c": "01742",
-      "Price__c": 975000,
-      "Title__c": "Stunning Victorian",
-      "Beds__c": 4,
-      "Baths__c": 3,
-      "Location__Longitude__s": -71.11095,
-      "Location__Latitude__s": 42.35663,
-      "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01.jpg",
-      "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house01sq.jpg",
-      "Description__c": "Lorem ipsum dolor sit amet",
-      "Broker__c": "@CarolineBrookerRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "24PearlStRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef2"
+          },
+          "Name": "高輪3丁目2番",
+          "Address__c": "高輪3丁目2番",
+          "City__c": "品川",
+          "State__c": "東京都",
+          "Zip__c": "1420052",
+          "Price__c": 45000000,
+          "Title__c": "閑静かつモダン",
+          "Beds__c": 3,
+          "Baths__c": 3,
+          "Location__Longitude__s": 139.732456,
+          "Location__Latitude__s": 35.63515,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior7.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior7.jpg",
+          "Description__c": "高級住宅街の中でも、お買い得なプライス",
+          "Broker__c": "@Yamamoto_Broker__cRef1"
       },
-        "Name": "Ultimate Sophistication",
-        "Address__c": "24 Pearl St",
-        "City__c": "Cambridge",
-        "State__c": "MA",
-        "Zip__c": "02420",
-        "Price__c": 1200000,
-        "Title__c": "Ultimate Sophistication",
-        "Beds__c": 5,
-        "Baths__c": 4,
-        "Location__Longitude__s": -71.10869,
-        "Location__Latitude__s": 42.359103,
-        "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02.jpg",
-        "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house02sq.jpg",
-        "Description__c": "Lorem ipsum dolor sit amet",
-        "Broker__c": "@MichaelJonesRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "72FrancisStRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef3"
+          },
+          "Name": "北新宿2丁目6番",
+          "Address__c": "北新宿2丁目6番",
+          "City__c": "新宿",
+          "State__c": "東京都",
+          "Zip__c": "1690074",
+          "Price__c": 45000000,
+          "Title__c": "駅近ハイクラス物件",
+          "Beds__c": 3,
+          "Baths__c": 3,
+          "Location__Longitude__s": 139.690307,
+          "Location__Latitude__s": 35.701432,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior8.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior8.jpg",
+          "Description__c": "新宿にありながら、広い間取りと駅近物件。",
+          "Broker__c": "@Shindo_Broker__cRef2"
       },
-      "Name": "Modern City Living",
-      "Address__c": "72 Francis st",
-      "City__c": "Boston",
-      "State__c": "MA",
-      "Zip__c": "02420",
-      "Price__c": 825000,
-      "Title__c": "Modern City Living",
-      "Beds__c": 5,
-      "Baths__c": 4,
-      "Location__Longitude__s": -71.106827,
-      "Location__Latitude__s": 42.335435,
-      "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03.jpg",
-      "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house03sq.jpg",
-      "Description__c": "Lorem ipsum dolor sit amet",
-      "Broker__c": "@JenniferWuRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "32PrinceStRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef4"
+          },
+          "Name": "南新宿3丁目3番",
+          "Address__c": "南新宿3丁目3番",
+          "City__c": "新宿",
+          "State__c": "東京都",
+          "Zip__c": "1690074",
+          "Price__c": 45000000,
+          "Title__c": "ハイクラス物件",
+          "Beds__c": 3,
+          "Baths__c": 3,
+          "Location__Longitude__s": 139.726011,
+          "Location__Latitude__s": 35.703752,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior9.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior9.jpg",
+          "Description__c": "徒歩圏内にスーパーと病院あり",
+          "Broker__c": "@Yamamoto_Broker__cRef1"
       },
-        "Name": "Stunning Colonial",
-        "Address__c": "32 Prince st",
-        "City__c": "Cambridge",
-        "State__c": "MA",
-        "Zip__c": "02420",
-        "Price__c": 930000,
-        "Title__c": "Stunning Colonial",
-        "Beds__c": 5,
-        "Baths__c": 4,
-        "Location__Longitude__s": -71.110448,
-        "Location__Latitude__s": 42.360642,
-        "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04.jpg",
-        "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house04sq.jpg",
-        "Description__c": "Lorem ipsum dolor sit amet",
-        "Broker__c": "@JenniferWuRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "110BaxterStRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef5"
+          },
+          "Name": "西新宿1丁目4番",
+          "Address__c": "西新宿1丁目4番",
+          "City__c": "新宿",
+          "State__c": "東京都",
+          "Zip__c": "1690074",
+          "Price__c": 95000000,
+          "Title__c": "超高層タワーマンション",
+          "Beds__c": 3,
+          "Baths__c": 3,
+          "Location__Longitude__s": 139.695606,
+          "Location__Latitude__s": 35.694131,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior10.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior10.jpg",
+          "Description__c": "一度は住んでみたい憧れの物件が登場",
+          "Broker__c": "@Yokoyama_Broker__cRef3"
       },
-        "Name": "Waterfront in the City",
-        "Address__c": "110 Baxter Street",
-        "City__c": "Boston",
-        "State__c": "MA",
-        "Zip__c": "02420",
-        "Price__c": 850000,
-        "Title__c": "Waterfront in the City",
-        "Beds__c": 3,
-        "Baths__c": 2,
-        "Location__Longitude__s": -71.053943,
-        "Location__Latitude__s": 42.372486,
-        "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05.jpg",
-        "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house05sq.jpg",
-        "Description__c": "Lorem ipsum dolor sit amet",
-        "Broker__c": "@OliviaGreenRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "448HanoverStRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef6"
+          },
+          "Name": "六本木2丁目24番",
+          "Address__c": "六本木2丁目24番",
+          "City__c": "六本木",
+          "State__c": "東京都",
+          "Zip__c": "1060032",
+          "Price__c": 99000000,
+          "Title__c": "モダンリビング",
+          "Beds__c": 5,
+          "Baths__c": 4,
+          "Location__Longitude__s": 139.736972,
+          "Location__Latitude__s": 35.66599,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-interior1.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-interior1.jpg",
+          "Description__c": "ブランドシステムキッチンが特徴のデザイナーズ物件です。",
+          "Broker__c": "@Akiyama_Broker__cRef4"
       },
-        "Name": "Quiet Retreat",
-        "Address__c": "448 Hanover St",
-        "City__c": "Boston",
-        "State__c": "MA",
-        "Zip__c": "02420",
-        "Price__c": 725000,
-        "Title__c": "Quiet Retreat",
-        "Beds__c": 4,
-        "Baths__c": 2,
-        "Location__Longitude__s": -71.052617,
-        "Location__Latitude__s": 42.366855,
-        "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06.jpg",
-        "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house06sq.jpg",
-        "Description__c": "Lorem ipsum dolor sit amet",
-        "Broker__c": "@MiriamAupontRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "127EndicottStRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef7"
+          },
+          "Name": "南品川6丁目4号",
+          "Address__c": "南品川6丁目4号",
+          "City__c": "品川",
+          "State__c": "東京都",
+          "Zip__c": "1420052",
+          "Price__c": 65000000,
+          "Title__c": "シティリビング",
+          "Beds__c": 2,
+          "Baths__c": 2,
+          "Location__Longitude__s": 139.738228,
+          "Location__Latitude__s": 35.611609,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-interior2.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-interior2.jpg",
+          "Description__c": "人気のシティリビングが品川にも登場",
+          "Broker__c": "@Subo_Broker__cRef5"
       },
-        "Name": "City Living",
-        "Address__c": "127 Endicott St",
-        "City__c": "Boston",
-        "State__c": "MA",
-        "Zip__c": "02420",
-        "Price__c": 450000,
-        "Title__c": "City Living",
-        "Beds__c": 3,
-        "Baths__c": 1,
-        "Location__Longitude__s": -71.057352,
-        "Location__Latitude__s": 42.365003,
-        "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07.jpg",
-        "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house07sq.jpg",
-        "Description__c": "Lorem ipsum dolor sit amet",
-        "Broker__c": "@MichelleLambertRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "48BrattleStRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef8"
+          },
+          "Name": "高輪2丁目7番2号",
+          "Address__c": "高輪2丁目7番2号",
+          "City__c": "品川",
+          "State__c": "東京都",
+          "Zip__c": "1420052",
+          "Price__c": 82500000,
+          "Title__c": "シティーエントランス",
+          "Beds__c": 5,
+          "Baths__c": 4,
+          "Location__Longitude__s": 139.733924,
+          "Location__Latitude__s": 35.635758,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-robby1.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-robby1.jpg",
+          "Description__c": "モダンなエントランスが特徴の駅近物件です。",
+          "Broker__c": "@Yoshitaka_Broker__cRef6"
       },
-        "Name": "Heart of Harvard Square",
-        "Address__c": "48 Brattle st",
-        "City__c": "Cambridge",
-        "State__c": "MA",
-        "Zip__c": "02420",
-        "Price__c": 450000,
-        "Title__c": "Heart of Harvard Square",
-        "Beds__c": 5,
-        "Baths__c": 4,
-        "Location__Longitude__s": -71.121653,
-        "Location__Latitude__s": 42.374117,
-        "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10.jpg",
-        "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house10sq.jpg",
-        "Description__c": "Lorem ipsum dolor sit amet",
-        "Broker__c": "@SeniorBrokerRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "121HarborwalkRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef9"
+          },
+          "Name": "南麻布3丁目2番",
+          "Address__c": "南麻布3丁目2番",
+          "City__c": "六本木",
+          "State__c": "東京都",
+          "Zip__c": "1060032",
+          "Price__c": 93000000,
+          "Title__c": "都心の閑静街",
+          "Beds__c": 5,
+          "Baths__c": 4,
+          "Location__Longitude__s": 139.728668,
+          "Location__Latitude__s": 35.650996,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior2.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior2.jpg",
+          "Description__c": "都心にありながら、周りが静かで良好な生活圏です。六本木ヒルズ徒歩2分",
+          "Broker__c": "@Takahashi_Broker__cRef7"
       },
-      "Name": "Seaport District Retreat",
-      "Address__c": "121 Harborwalk",
-      "City__c": "Boston",
-      "State__c": "MA",
-      "Zip__c": "02420",
-      "Price__c": 450000,
-      "Title__c": "Seaport District Retreat",
-      "Beds__c": 3,
-      "Baths__c": 3,
-      "Location__Longitude__s": -71.049327,
-      "Location__Latitude__s": 42.35695,
-      "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09.jpg",
-      "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house09sq.jpg",
-      "Description__c": "Lorem ipsum dolor sit amet",
-      "Broker__c": "@CarolineBrookerRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "640HarrisonAveRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef10"
+          },
+          "Name": "大崎1丁目10番",
+          "Address__c": "大崎1丁目10番",
+          "City__c": "品川",
+          "State__c": "東京都",
+          "Zip__c": "1420052",
+          "Price__c": 85000000,
+          "Title__c": "アーバンスタイル",
+          "Beds__c": 3,
+          "Baths__c": 2,
+          "Location__Longitude__s": 139.729533,
+          "Location__Latitude__s": 35.620571,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior3.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior3.jpg",
+          "Description__c": "コストパフォーマンスの良い、築浅物件です。",
+          "Broker__c": "@Kakefu_Broker__cRef8"
       },
-      "Name": "City Living",
-      "Address__c": "640 Harrison Ave",
-      "City__c": "Boston",
-      "State__c": "MA",
-      "Zip__c": "02420",
-      "Price__c": 650000,
-      "Title__c": "City Living",
-      "Beds__c": 2,
-      "Baths__c": 2,
-      "Location__Longitude__s": -71.068781,
-      "Location__Latitude__s": 42.339892,
-      "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08.jpg",
-      "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house08sq.jpg",
-      "Description__c": "Lorem ipsum dolor sit amet",
-      "Broker__c": "@MichaelJonesRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "95GloucesterStRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef11"
+          },
+          "Name": "南品川4丁目48号",
+          "Address__c": "南品川4丁目48号",
+          "City__c": "品川",
+          "State__c": "東京都",
+          "Zip__c": "1420052",
+          "Price__c": 72500000,
+          "Title__c": "モダンスタイル一軒家",
+          "Beds__c": 4,
+          "Baths__c": 2,
+          "Location__Longitude__s": 139.738493,
+          "Location__Latitude__s": 35.608954,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior4.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior4.jpg",
+          "Description__c": "品川駅徒歩15分圏内にありながら、ゆったりとした贅沢な土地使いの物件が到着です。",
+          "Broker__c": "@Kakefu_Broker__cRef8"
       },
-      "Name": "Architectural Details",
-      "Address__c": "95 Gloucester St",
-      "City__c": "Boston",
-      "State__c": "MA",
-      "Zip__c": "02420",
-      "Price__c": 690000,
-      "Title__c": "Architectural Details",
-      "Beds__c": 3,
-      "Baths__c": 3,
-      "Location__Latitude__s": 42.349693,
-      "Location__Longitude__s": -71.084407,
-      "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11.jpg",
-      "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house11sq.jpg",
-      "Description__c": "Lorem ipsum dolor sit amet",
-      "Broker__c": "@CarolineBrookerRef"
-    },
-    {
-      "attributes": {
-        "type": "Property__c",
-        "referenceId": "145CommonwealthAveRef"
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef12"
+          },
+          "Name": "北品川1丁目2番7号",
+          "Address__c": "北品川1丁目2番7号",
+          "City__c": "品川",
+          "State__c": "東京都",
+          "Zip__c": "1420052",
+          "Price__c": 45000000,
+          "Title__c": "シティリビング",
+          "Beds__c": 3,
+          "Baths__c": 1,
+          "Location__Longitude__s": 139.739612,
+          "Location__Latitude__s": 35.622558,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior5.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior5.jpg",
+          "Description__c": "品川地区で人気のシティリビングシリーズです。",
+          "Broker__c": "@Yokoyama_Broker__cRef3"
       },
-      "Name": "Contemporary Luxury",
-      "Address__c": "145 Commonwealth Ave",
-      "City__c": "Boston",
-      "State__c": "MA",
-      "Zip__c": "02420",
-      "Price__c": 845000,
-      "Title__c": "Contemporary Luxury",
-      "Beds__c": 4,
-      "Baths__c": 3,
-      "Location__Latitude__s": 42.352466,
-      "Location__Longitude__s": -71.075311,
-      "Picture__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12.jpg",
-      "Thumbnail__c": "https://s3-us-west-1.amazonaws.com/sfdc-demo/realty/house12sq.jpg",
-      "Description__c": "Lorem ipsum dolor sit amet",
-      "Broker__c": "@MichaelJonesRef"
-    }
+      {
+          "attributes": {
+              "type": "Property__c",
+              "referenceId": "Property__cRef13"
+          },
+          "Name": "六本木6丁目10番",
+          "Address__c": "六本木6丁目10番",
+          "City__c": "六本木",
+          "State__c": "東京都",
+          "Zip__c": "1060032",
+          "Price__c": 45000000,
+          "Title__c": "流行の中心地",
+          "Beds__c": 5,
+          "Baths__c": 4,
+          "Location__Longitude__s": 139.729989,
+          "Location__Latitude__s": 35.658193,
+          "Picture__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior6.jpg",
+          "Thumbnail__c": "https://static.dreamhouseappjp.io/images/dreamhousejp-exterior6.jpg",
+          "Description__c": "六本木の中心にあるラグジュアリーマンション。コンドミニアムタイプもあり",
+          "Broker__c": "@Yamamoto_Broker__cRef1"
+      }
   ]
 }

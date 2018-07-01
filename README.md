@@ -9,17 +9,17 @@ Dreamhouseは不動産ビジネスをSalesforce Platformで構築したサンプ
 ## 目次
 
 * [インストール手順](#インストール手順)
-    * [Salesforce DX を使ってDreamhouseをインストールする](#Salesforce DX を使ってDreamhouseをインストールする)
-<!--    * [ロック解除済みパッケージを使ってDramHouseをインストールする](#ロック解除済みパッケージを使ってDramHouseをインストールする)-->
+    * [Salesforce DX を使ってDreamhouseをインストールする](#salesforce-dx-を使ってdreamhouseをインストールする)
+    * [ロック解除済みパッケージを使ってDreamhouseをインストールする](#ロック解除済みパッケージを使ってdreamhouseをインストールする)
 <!-- * [コードハイライト](#コードハイライト)-->
 * [追加リソース](#追加リソース)
-<!--
+
 ## インストール手順
 
 2種類の方法でDreamHouseをインストールできます:
 - Salesforce DX を利用する
 - ロック解除済みパッケージを利用する
--->
+
 ### Salesforce DX を使ってDreamhouseをインストールする
 こちらはアプリケーションとコーディングのエクスペリエンスを求める開発者にとって推奨されるインストール方法です
 
@@ -54,22 +54,22 @@ Dreamhouseは不動産ビジネスをSalesforce Platformで構築したサンプ
 1. アプリケーションランチャーから **DreamHouse** を選択します
 
 1. **データインポート** タブをクリックし、 **サンプルデータで初期化** をクリックします
-<!--
-### ロック解除済みパッケージを使ってDramHouseをインストールする
+
+### ロック解除済みパッケージを使ってDreamhouseをインストールする
 こちらは非開発者に推奨のインストール方法です。コードを変更する予定がなく、サンプルアプリの体験のみが目的の場合はこちらを利用します。
 
 1. Developer Editionに [サインアップ](https://developer.salesforce.com/signup) します。
 
 1. 私のドメインを有効化します。 [こちら](https://trailhead.salesforce.com/ja/modules/identity_login/units/identity_login_my_domain) の手順に従って私のドメインを有効化してください。
 
-1. [こちらのリンク](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB00000009UeX) をクリックし、DreamHouseのロック解除済みパッケージをあなたのDeveloper Edition組織にインストールします。
+1. [こちらのリンク](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0K000001A9PPQA0) をクリックし、DreamHouseのロック解除済みパッケージをあなたのDeveloper Edition組織にインストールします。
 
 1. 画面が出たら **全てのユーザ にインストール** を選択し、外部サイトへのアクセス(api.lifx.com, dreamhouzz-push-server.herokuapp.com, and hooks.slack.com)を許可します。
 
 1. **DreamHouse** をアプリケーションランチャーで選択します。
 
 1. **データインポート** タブをクリックし、**サンプルデータで初期化** をクリックします。
--->
+
 <!--
 ## コードハイライト
 
