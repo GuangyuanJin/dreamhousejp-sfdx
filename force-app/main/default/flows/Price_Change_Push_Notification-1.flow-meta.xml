@@ -8,7 +8,7 @@
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Push Notification</label>
+        <label>プッシュ通知</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <actionName>PushPriceChangeNotification</actionName>
@@ -41,7 +41,7 @@
             <processMetadataValues>
                 <name>objectType</name>
                 <value>
-                    <stringValue></stringValue>
+                    <stringValue/>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -153,12 +153,12 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>Price Change?</label>
+            <label>価格が変更された?</label>
         </rules>
     </decisions>
-    <description>When the price of a property changes, send Push Notification</description>
+    <description>物件の価格が変更された際に、プッシュ通知を送る</description>
     <interviewLabel>Price_Change_Push_Notification-1_InterviewLabel</interviewLabel>
-    <label>Price Change Push Notification</label>
+    <label>価格変更プッシュ通知</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>

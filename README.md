@@ -62,9 +62,9 @@ Dreamhouseは不動産ビジネスをSalesforce Platformで構築したサンプ
 
 1. 私のドメインを有効化します。 [こちら](https://trailhead.salesforce.com/ja/modules/identity_login/units/identity_login_my_domain) の手順に従って私のドメインを有効化してください。
 
-1. [こちらのリンク](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0K000001A9PPQA0) をクリックし、DreamHouseのロック解除済みパッケージをあなたのDeveloper Edition組織にインストールします。
+1. [こちらのリンク](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0K000001A9PoQAK) をクリックし、DreamHouseのロック解除済みパッケージをあなたのDeveloper Edition組織にインストールします。
 
-1. 画面が出たら **全てのユーザ にインストール** を選択し、外部サイトへのアクセス(api.lifx.com, dreamhouzz-push-server.herokuapp.com, and hooks.slack.com)を許可します。
+1. 画面が出たら **全てのユーザ にインストール** を選択し、外部サイトへのアクセス(api.lifx.com, dreamhousejp-push-server.herokuapp.com, and hooks.slack.com)を許可します。
 
 1. **DreamHouse** をアプリケーションランチャーで選択します。
 

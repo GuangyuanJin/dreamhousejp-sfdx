@@ -10,11 +10,11 @@
         <processMetadataValues>
             <name>textJson</name>
             <value>
-                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;New Property: {![Property__c].Address__c}, {![Property__c].City__c}. {![Property__c].Beds__c} bedrooms. ${![Property__c].Price__c}&quot;}</stringValue>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;新しい物件: {![Property__c].Address__c}, {![Property__c].City__c}. {![Property__c].Beds__c} ベットルーム. ${![Property__c].Price__c}&quot;}</stringValue>
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Post to Chatter</label>
+        <label>Chatterへ投稿</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <actionName>chatterPost</actionName>
@@ -22,7 +22,7 @@
         <inputParameters>
             <name>text</name>
             <value>
-                <stringValue>New Property: {!myVariable_current.Address__c}, {!myVariable_current.City__c}. {!myVariable_current.Beds__c} bedrooms. ${!myVariable_current.Price__c}</stringValue>
+                <stringValue>新しい物件: {!myVariable_current.Address__c}, {!myVariable_current.City__c}. {!myVariable_current.Beds__c} ベットルーム. ${!myVariable_current.Price__c}</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -79,17 +79,17 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>New</label>
+            <label>新規</label>
         </rules>
     </decisions>
-    <description>When a new property is added, post it to chatter</description>
+    <description>新しい物件が追加されたらChatterにポストする</description>
     <formulas>
         <name>formula_myRule_1</name>
         <dataType>Boolean</dataType>
         <expression>true</expression>
     </formulas>
     <interviewLabel>Advertise_New_Property-2_InterviewLabel</interviewLabel>
-    <label>Advertise New Property</label>
+    <label>新しい物件の展開</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>

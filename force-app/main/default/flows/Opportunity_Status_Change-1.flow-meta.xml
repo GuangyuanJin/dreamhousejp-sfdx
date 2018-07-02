@@ -8,7 +8,7 @@
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Post to Slack</label>
+        <label>Slackへ投稿</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <actionName>SlackOpportunityPublisher</actionName>
@@ -41,7 +41,7 @@
             <processMetadataValues>
                 <name>objectType</name>
                 <value>
-                    <stringValue></stringValue>
+                    <stringValue/>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -153,12 +153,12 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>Stage Change?</label>
+            <label>ステージが変更されたか?</label>
         </rules>
     </decisions>
-    <description>When the status of an opportunity changes, post the new status to Slack</description>
+    <description>商談のステージが変更された際に、Slackへ新しいステージをポストする</description>
     <interviewLabel>Opportunity_Status_Change-1_InterviewLabel</interviewLabel>
-    <label>Opportunity Status Change</label>
+    <label>商談ステージの変更</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>

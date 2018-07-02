@@ -8,7 +8,7 @@
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Post to Slack</label>
+        <label>Slackへポスト</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <actionName>PostPriceChangeToSlack</actionName>
@@ -41,7 +41,7 @@
             <processMetadataValues>
                 <name>objectType</name>
                 <value>
-                    <stringValue></stringValue>
+                    <stringValue/>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -153,12 +153,12 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>Price Change?</label>
+            <label>価格は変更されたか?</label>
         </rules>
     </decisions>
-    <description>When the price of a property changes, post it to Slack</description>
+    <description>物件の価格が変更された際に、Slackへポストする</description>
     <interviewLabel>Post_Price_Changes_to_Slack-1_InterviewLabel</interviewLabel>
-    <label>Post Price Changes to Slack</label>
+    <label>価格変更をSlackへポスト</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>
